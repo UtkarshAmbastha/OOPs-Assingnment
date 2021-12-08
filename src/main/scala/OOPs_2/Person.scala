@@ -12,7 +12,7 @@ class Person(var name: String, var age: Int) extends Ordered[Person]{
 
 
 
-      case _ => if (this.name.length.equals(that.name.length) && this.age.equals(that.age))
+      case 2 => if (this.name.length.equals(that.name.length) && this.age.equals(that.age))
                             println("True")
                             else println("False")
                             1
@@ -22,7 +22,7 @@ class Person(var name: String, var age: Int) extends Ordered[Person]{
 }
 
 object Person extends App {
-  var firstPerson = new Person("Lucifer", 26)
-  var secondPerson = new Person("Amanadiel", 28)
+  var firstPerson = new Person("Lucifer", 24)
+  var secondPerson = new Person("Amenadiel", 28)
   firstPerson compare secondPerson
 }
